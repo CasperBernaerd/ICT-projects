@@ -52,7 +52,9 @@ h2 {
 
 /* containers */
 body {
-	background-color: lightslategray;
+	background-image: url("../images/hophip.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	font-family:Arial;
 	font-size:0.8em;
 }
@@ -194,4 +196,7 @@ footer {
 #myDiv {
   display: none;
   text-align: center;
+}
+.og {
+	
 }

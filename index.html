@@ -6,14 +6,14 @@
 	<link rel="stylesheet" href="css/screen.css">
 	<script>
 		var myVar;
-
 		function myFunction() {
 			myVar = setTimeout(showPage, 3000);
 		}
 
 		function showPage() {
-		  document.getElementById("loader").style.display = "none";
-		  document.getElementById("myDiv").style.display = "block";
+			document.body.style.background = " lightslategray";
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("myDiv").style.display = "block";
 		}
 	</script>
 </head>
