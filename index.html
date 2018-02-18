@@ -1,59 +1,48 @@
 <!doctype html>
 <html>
-	<head>
-	<title> Website </title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/screen.css">
-	<script>
-		var myVar;
-		function myFunction() {
-			document.body.style.background = " url('images/hophip.jpg') no-repeat 100% fixed";
-			myVar = setTimeout(showPage, 11500);
-		}
+<head>
+<title> Website </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/screen.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		function showPage() {
-			document.body.style.background = " lightslategray";
-			document.getElementById("loader").style.display = "none";
-			document.getElementById("myDiv").style.display = "block";
-		}
-	</script>
+	
 </head>
-<body onload="myFunction()" style="margin:0;">
-	<audio autoplay>
-		<source src="music/hophip.mp3" type="audio/mp3">
-		Your browser does not support the audio element.
-	</audio>
-<div id="loader"><img src="images/lp.png" alt="hiphop"></div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<body>
 	<header>
-		<h1 class="logo">Logo</h1>
-		<nav>
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="downloads.php">Downloads</a></li>
-				<li><a href="forum.php">Forum</a></li>
-				<li><a href="contact.php">Contact</a></li>
-			</ul>
-		</nav>
-	<div class="clear"></div>
+		<div class="header"><img src="images/hip-hop.jpg" alt="Smiley face" height="40%" width="40%"></div>
+		<div id="navbar">
+			<a class="active" href="index.html">Home</a>
+			<a href="history.html">				History</a>
+			<a href="songs.html">				Hot songs</a>
+			<a href="cultuur.html">				Cultural effects</a>
+			<a href="styles.html">				Styles</a>
+			<a href="worldwide.html">			World Wide</a>
+		</div>
 	</header>
-	<div id="container">
-		<aside>
-			<div class="widget">
-				<h2>Widget header</h2>
-				<div class="inner">
-					Widget contents
-				</div>
-			</div>
-		</aside>
-		
+	<div class="content">
 		<h1>Home</h1>
 		<p>Just a template.</p>
 	</div>
 	<footer>
-		&copy; Casper 2018
+		<p>&copy; Arno Casper Scott 2018</p>
 	</footer>
-</div>
+	
+	
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+</script>
 </body>
 </html>
 		
