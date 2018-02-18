@@ -50,11 +50,6 @@ footer {
   color: black;
 }
 
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 .content {
   padding: 16px;
   min-height:1000px;
