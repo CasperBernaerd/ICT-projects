@@ -26,7 +26,7 @@ footer {
 	
 /* index pagina slide in
 ------------------------------------------------------------*/
-@keyframes slideInFromTop {
+@keyframes slideInTop {
   0% {
     transform: translateY(-100%);
   }
@@ -35,7 +35,7 @@ footer {
   }
 }
 .slide {
-	animation: 1s ease-out 0s 1 slideInFromTop;
+	animation: 1s ease-out 0s 1 slideInTop;
 
 }
 /* bijpassende kleur voor banner foto
@@ -72,7 +72,7 @@ footer {
 
 .content {
 	padding: 16px;
-	min-height:1000px;
+	min-height:1000px;	/* zodat je het sticky nav effect kunt zien als er nog geen content op de pagina staat */
 }
 
 .sticky {
@@ -81,6 +81,4 @@ footer {
 	width: 100%
 }
 
-.sticky + .content {
-	padding-top: 60px;
-}
+.sticky + .content {padding-top: 60px;}
