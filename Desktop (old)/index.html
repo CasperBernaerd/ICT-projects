@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title> Website </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="shortcut icon" type="image/png" href="images/logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+</head>
+<body>
+	<header class="slide">
+		<div class="header"><img src="images/hip-hop.jpg" alt="Smiley face" height="40%" width="40%"></div>
+		<div id="nav">
+			<a href="index.html"> 				Home </a>
+			<a href="history.html">				History</a>
+			<a href="songs.html">				Hot songs</a>
+			<a href="cultuur.html">				Cultural effects</a>
+			<a href="styles.html">				Styles</a>
+			<a href="worldwide.html">			World Wide</a>
+		</div>
+	</header>
+	<div class="content">
+		<h1>Home</h1>
+		<p>Just a template.</p>
+	</div>
+	<footer>
+		<p>&copy; Arno Casper Scott 2018</p>
+	</footer>
+	
+	
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("nav");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+</script>
+</body>
+</html>
+		

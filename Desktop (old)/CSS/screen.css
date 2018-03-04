@@ -1,0 +1,84 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	margin: 0;
+	font-size: 28px;
+	background-color: #202020;
+}
+
+footer {
+		position:relative;
+		bottom:0;
+		padding:0;
+		margin:0;
+		background-color:#333;
+		box-shadow: 0px -1px 4px;
+	}
+	footer p {
+		padding:15px;
+		margin:0;
+		font-size: 17px;
+		color: grey;
+	}
+	
+/* index pagina slide in
+------------------------------------------------------------*/
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.slide {
+	animation: 1s ease-out 0s 1 slideInTop;
+
+}
+/* bijpassende kleur voor banner foto
+------------------------------------------------------------*/
+.header {
+	background-color: #202020;
+	padding: 30px;
+	text-align: center;
+}
+/* navigatie
+------------------------------------------------------------*/
+#nav {
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0px 1px 4px, 0px -1px 4px;
+	}
+	#nav a {
+		float: none;
+		display: inline-block;
+		color: #f2f2f2;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		transition: 0.5s;
+	}
+	#nav a:hover {
+		background-color: #ddd;
+		color: black;
+		transition: 0.5s;
+	}
+
+.content {
+	padding: 16px;
+	min-height:1000px;	/* zodat je het sticky nav effect kunt zien als er nog geen content op de pagina staat */
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+}
+
+.sticky + .content {padding-top: 60px;}

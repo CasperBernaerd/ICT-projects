@@ -6,44 +6,54 @@
 <link rel="stylesheet" href="css/screen.css">
 <link rel="shortcut icon" type="image/png" href="images/logo.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+	var modal = document.getElementById('id10');
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target === modal) {
+				closeNav();
+			}
+		}
 
+	function openNav() {
+			document.getElementById("sidenav").style.width = "250px";
+		}
+	function closeNav() {
+			document.getElementById("sidenav").style.width = "0";
+		}
+</script>
 	
 </head>
 <body>
 	<header class="slide">
 		<div class="header"><img src="images/hip-hop.jpg" alt="Smiley face" height="40%" width="40%"></div>
-		<div id="nav">
-			<a href="index.html"> 				Home </a>
-			<a href="history.html">				History</a>
-			<a href="songs.html">				Hot songs</a>
-			<a href="cultuur.html">				Cultural effects</a>
-			<a href="styles.html">				Styles</a>
-			<a href="worldwide.html">			World Wide</a>
+		<div class="nav">
+			<div id="id01" class="sidenavlogo" onclick="openNav()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">	&times;</a>
+				<h2>Menu</h2>
+				<div class="inner">
+					<a href="index.html"><img src="images/home.png" alt="Smiley face" height="18px" width="18px"> 				Home </a>
+					<a href="history.html"><img src="images/history.png" alt="Smiley face" height="18px" width="18px">			History</a>
+					<a href="songs.html"><img src="images/noot.png" alt="Smiley face" height="18px" width="18px">				Hot songs</a>
+					<a href="cultuur.html"><img src="images/masks.png" alt="Smiley face" height="18px" width="18px">			Cultural effects</a>
+					<a href="styles.html"><img src="images/hipster.png" alt="Smiley face" height="18px" width="18px">			Styles</a>
+					<a href="worldwide.html"><img src="images/world.png" alt="Smiley face" height="18px" width="18px">			World Wide</a>
+				</div>
+			</div>
 		</div>
 	</header>
-	<div class="content">
+	<div id="id10" class="content">
 		<h1>Home</h1>
 		<p>Just a template.</p>
 	</div>
 	<footer>
 		<p>&copy; Arno Casper Scott 2018</p>
 	</footer>
-	
-	
-<script>
-	window.onscroll = function() {myFunction()};
-
-	var navbar = document.getElementById("nav");
-	var sticky = navbar.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
-	  } else {
-		navbar.classList.remove("sticky");
-	  }
-	}
-</script>
 </body>
 </html>
 		
