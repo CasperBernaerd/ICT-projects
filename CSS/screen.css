@@ -1,3 +1,7 @@
+/*
+mobiel grootte = 333 x 566p
+--------------------------------------------------------*/
+
 * {
 	margin:0;
 	padding:0;
@@ -11,7 +15,7 @@
 .nav {
 	height: 60px;
 	width:100%;
-	background-color:#555;
+	background-color:#333;
 	position:fixed;
 	top:0;
 }
@@ -23,7 +27,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #444;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -71,7 +75,7 @@
 
 #sidenav .closebtn:hover {
     color: #000;
-	background-color: #333 ;
+	background-color: #444 ;
 }
 
 .sidenavlogo {
@@ -89,7 +93,8 @@
 /* 
 ---------------------------------------------------------*/
 .content {
-	min-height:450px;
+	min-height:451px;
+	background-color: #202020 ; 
 }
 
 footer {
@@ -104,6 +109,6 @@ footer {
 ---------------------------------------------------------*/
 .kader {
 	margin-top:60px;
-	color: #666;
+	color: #f9f9f9;
 	text-align:center;
 }
