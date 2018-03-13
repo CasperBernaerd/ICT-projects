@@ -95,8 +95,29 @@ mobiel grootte = 333 x 566p
 .content {
 	min-height:451px;
 	background-color: #202020 ; 
-}
+	}
+	.content h2 {
+		padding-top:20px;
+		padding-bottom:20px;
+	}
 
+p {
+	text-align: left;
+	padding: 25px;
+}
+.scrollToTop a{
+	padding: 8px 8px 8px 17px;
+    text-decoration: none;
+	text-align:center;
+    font-size: 15px;
+    color: #f1f1f1;
+	background-color:#555;
+    display: block;
+	height:20px;
+	} 
+	.scrollToTop a:hover{
+		background-color:#666;
+	}
 footer {
 	position:relative;
 	bottom:0;
@@ -104,7 +125,7 @@ footer {
 	background-color:#333;
 	color : #f1f1f1;
 	padding:20px;
-}
+} footer p {padding:0; color: #818181;}
 /* 
 ---------------------------------------------------------*/
 .kader {
