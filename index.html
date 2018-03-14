@@ -31,10 +31,18 @@
 				</div>
 			</div>
 		</div>
+		<div id="nav">
+			<a href="index.html">		Home </a>
+			<a href="history.html">		History</a>
+			<a href="songs.html">		Greatests songs</a>
+			<a href="cultuur.html">		Cultural effects</a>
+			<a href="styles.html">		Styles</a>
+			<a href="worldwide.html">	World Wide</a>
+		</div>
 	</header>
 	<div class="kader">
 		<div class="content">
-			<img src="images/hip-hop.jpg" alt="Smiley face" height="" width="100%">
+			<div class="mobielheader"><img src="images/hip-hop.jpg" alt="Smiley face" height="" width="100%"></div>
 			<h2>What will you find here ?</h2>
 		<ul>
 			<li>Hiphop History</li>
@@ -44,6 +52,17 @@
 		</div>
 		
 	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("nav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {navbar.classList.add("sticky")} 
+			else {navbar.classList.remove("sticky"); }
+		}
+	</script>
 	<footer>
 		<p>&copy; Arno Casper Scott 2018</p>
 	</footer>
