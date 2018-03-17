@@ -6,14 +6,14 @@
 <link rel="stylesheet" href="css/screen.css">
 <link rel="shortcut icon" type="image/png" href="images/logo.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="script.js"></script>
+
 	
 </head>
 <body>
 	<header class="slide" id="top">
 		<div class="header"><img src="images/Hip_Hop_Movement01.png" alt="Smiley face" height="20%" width="20%"></div>
-		<div class="nav">
-			<div id="id01" class="sidenavlogo" onclick="openNav()">
+		<div class="mobielnav">
+			<div id="id01" class="sidenavlogo" onclick="toggleNav()">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
@@ -169,23 +169,7 @@
 		
 	</div>
 	<div class="link"><a href="#top">Scroll to top</a></div>
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("nav");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-				navbar.style.backgroundColor = "rgba(100,100,100,0.6)";
-				} 
-			else {
-			navbar.classList.remove("sticky"); 
-			navbar.style.backgroundColor = "rgba(255,255,255,0.2)";
-			}
-		}
-	</script>
+<script src="script.js"></script>
 	<footer>
 		<p>&copy; Arno Casper Scott 2018</p>
 	</footer>
