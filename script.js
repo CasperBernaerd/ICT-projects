@@ -30,19 +30,18 @@ window.onresize = function(){	//voor sidenav , zodat op ipad de sidenav de tekst
 		document.body.style.transition = "all 0s";
 	}
 };
-		
-window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("nav");
+var sticky = navbar.offsetTop;	
 
-		var navbar = document.getElementById("nav");
-		var sticky = navbar.offsetTop;
+window.onscroll = function() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+		navbar.style.backgroundColor = "rgba(100,100,100,0.6)";
+		} 
+	else {
+		navbar.classList.remove("sticky"); 
+		navbar.style.backgroundColor = "rgba(255,255,255,0.2)";
+	}	
+};
 
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-				navbar.style.backgroundColor = "rgba(100,100,100,0.6)";
-				} 
-			else {
-			navbar.classList.remove("sticky"); 
-			navbar.style.backgroundColor = "rgba(255,255,255,0.2)";
-			}
-		}
+	
